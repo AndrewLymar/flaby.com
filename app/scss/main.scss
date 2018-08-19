@@ -1,0 +1,281 @@
+@import "libs";
+@import "vars";
+@import "fonts";
+@import "global";
+@import "flex";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
+h2 {
+	color: #494949;
+}
+
+.upper-title {
+	font-weight: 500;
+	color: #7C7C7C;
+}
+
+.divider {
+	width: 30px;
+	height: 1px;
+	margin-top: 20px;
+	border-bottom: 2px solid #2EB0EC;
+}
+
+button {
+	border: 0;
+	cursor: pointer;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	background: url("../img/header-bg.jpg") no-repeat;
+	color: #fff;
+	nav {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		border-bottom: 1px solid #BFE1FC;
+		ul {
+			li {
+				margin-right: 38px;
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
+					font-size: 17px;
+					font-weight: 500;
+					text-transform: uppercase;
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.banner {
+		width: 530px;
+		height: 800px;
+		h1 {
+			font-family: "MuseoSlab";
+			font-size: 40px;
+			text-transform: uppercase;
+		}
+		p {
+			font-size: 26px;
+			font-weight: 500;
+		}
+		button {
+			width: 240px;
+			height: 80px;
+			border-radius: 10px;
+			font-size: 20px;
+			font-weight: 500;
+		}
+		.google-store {
+			background-color: #fff;
+			color: #3e3e3e;
+			img {
+				margin-right: 20px;
+			}
+		}
+		.learn-more {
+			background-color: rgba(72, 148, 206, 0.7);
+			color: #fff;
+		}
+	}
+}
+
+.s-services {
+	padding-top: 110px;
+	padding-bottom: 170px;
+	.upper-title {
+		font-size: 18px;
+	}
+	h2 {
+		font-size: 24px;
+		text-transform: uppercase;
+	}
+	.items {
+		width: 100%;
+		margin-top: 75px;
+		.item {
+			width: 280px;
+			img {
+				margin-bottom: 25px;
+			}
+			.item-text {
+				margin-top: auto;
+				text-align: center;
+				h3 {
+					font-size: 18px;
+					font-weight: 600;
+					color: #494949;
+				}
+				p {
+					font-size: 14px;
+					font-weight: 500;
+					color: #7C7C7C;
+				}
+			}
+		}
+	}
+}
+
+.s-features {
+	padding-top: 115px;
+	padding-bottom: 115px;
+	background: url("../img/bg.jpg") no-repeat;
+	.img-container {
+		max-width: 680px;
+		margin-right: 150px;
+		img {
+			width: 100%;
+		}
+	}
+	.upper-title {
+		font-size: 22px;
+		color: #C0C1C1;
+	}
+	h2 {
+		font-size: 32px;
+	}
+	p {
+		font-size: 20px;
+		color: #7C7C7C;
+	}
+	ul {
+		li {
+			margin-bottom: 20px;
+			font-size: 14px;
+			font-weight: 500;
+			color: #7C7C7C;
+			.marker {
+				margin-right: 20px;
+				.marker-outer {
+					position: relative;
+					width: 20px;
+					height: 20px;
+					background: #C8EBF5;
+					border-radius: 50%;
+					.marker-inner {
+						width: 11px;
+						height: 11px;
+						background: #66D4F4;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+	button {
+		width: 150px;
+		height: 50px;
+		margin-top: 50px;
+		border-radius: 25px;
+		background-color: #66D4F4;
+		font-size: 14px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #fff;
+	}
+}
+
+.s-other {
+	padding-top: 90px;
+	.container {
+		max-width: 1070px;
+		.items {
+			margin-top: 110px;
+			.item {
+				width: 300px;
+				margin-bottom: 110px;
+				font-weight: 500;
+				img {
+					margin-right: 20px;
+				}
+				h3 {
+					font-size: 18px;
+					color: #494949;
+				}
+				p {
+					font-size: 14px;
+					color: #7C7C7C;
+				}
+			}
+		}
+	}
+}
+
+.s-reviews {
+	padding-top: 50px;
+	padding-bottom: 110px;
+	background: url(../img/bg-2.jpg) no-repeat;
+	.reviews {
+		.review {
+			position: relative;
+			width: 730px;
+			height: 350px;
+			margin-top: 120px;
+			padding-left: 85px;
+			padding-right: 85px;
+			background-color: #fff;
+			border: 1px solid #EAEBEB;
+			border-radius: 10px;
+			.customer-avatar {
+				position: absolute;
+				top: -17%;
+				padding: 4px;
+				border-radius: 50%;
+			}
+			.customer-name {
+				margin-top: 75px;
+				font-size: 20px;
+				font-weight: 600;
+				color: #494949;
+			}
+			span,
+			p {
+				font-weight: 500;
+				color: #7c7c7c;
+			}
+			span {
+				font-size: 15px;
+				line-height: 1.0em;
+			}
+			p {
+				text-align: center;
+				font-size: 18px;
+			}
+		}
+	}
+	.pages {
+		margin-top: 40px;
+		span {
+			font-size: 18px;
+			font-weight: 600;
+		}
+		.slide-prev,
+		.slide-next {
+			cursor: pointer;
+		}
+		.slide-prev {
+			margin-right: 30px;
+			img {
+				margin-right: 14px;
+			}
+			span {
+				color: #9EA1A1;
+			}
+		}
+		.slide-next {
+			img {
+				margin-left: 14px;
+			}
+			span {
+				color: #494949;
+			}
+		}
+	}
+}
+
+@import "media";
