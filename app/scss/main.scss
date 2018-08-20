@@ -3,19 +3,23 @@
 @import "fonts";
 @import "global";
 @import "flex";
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800');
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
 h2 {
 	color: #494949;
 }
 
 .upper-title {
-	font-weight: 500;
 	color: #7C7C7C;
 }
 
 .divider {
 	width: 30px;
 	height: 1px;
+	margin: 0 auto;
 	margin-top: 20px;
 	border-bottom: 2px solid #2EB0EC;
 }
@@ -25,8 +29,13 @@ button {
 	cursor: pointer;
 }
 
-body {
-	font-family: 'Raleway', sans-serif;
+.general-button {
+	background-color: #66D4F4;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #fff;
 }
 
 header {
@@ -130,11 +139,12 @@ header {
 		margin-right: 150px;
 		img {
 			width: 100%;
+			height: auto;
 		}
 	}
 	.upper-title {
 		font-size: 22px;
-		color: #C0C1C1;
+		font-weight: 500;
 	}
 	h2 {
 		font-size: 32px;
@@ -158,8 +168,8 @@ header {
 					background: #C8EBF5;
 					border-radius: 50%;
 					.marker-inner {
-						width: 11px;
-						height: 11px;
+						width: 10px;
+						height: 10px;
 						background: #66D4F4;
 						border-radius: 50%;
 					}
@@ -167,21 +177,19 @@ header {
 			}
 		}
 	}
-	button {
+	.general-button {
 		width: 150px;
 		height: 50px;
 		margin-top: 50px;
 		border-radius: 25px;
-		background-color: #66D4F4;
-		font-size: 14px;
-		font-weight: 600;
-		text-transform: uppercase;
-		color: #fff;
 	}
 }
 
 .s-other {
 	padding-top: 90px;
+	h2 {
+		text-transform: uppercase;
+	}
 	.container {
 		max-width: 1070px;
 		.items {
@@ -210,7 +218,11 @@ header {
 	padding-top: 50px;
 	padding-bottom: 110px;
 	background: url(../img/bg-2.jpg) no-repeat;
+	h2 {
+		text-transform: uppercase;
+	}
 	.reviews {
+		position: relative;
 		.review {
 			position: relative;
 			width: 730px;
@@ -221,6 +233,7 @@ header {
 			background-color: #fff;
 			border: 1px solid #EAEBEB;
 			border-radius: 10px;
+			z-index: 100;
 			.customer-avatar {
 				position: absolute;
 				top: -17%;
@@ -246,6 +259,30 @@ header {
 				text-align: center;
 				font-size: 18px;
 			}
+		}
+		.review-disable {
+			position: absolute;
+			background-color: #fff;
+			border: 1px solid #ECEEEE;
+			border-radius: 10px;
+		}
+		.review-disable-one {
+			@extend .review-disable;
+			width: 790px;
+			height: 309px;
+			top: 143px;
+			left: -30px;
+			opacity: 0.8;
+			z-index: 2;
+		}
+		.review-disable-two {
+			@extend .review-disable;
+			width: 843px;
+			height: 257px;
+			top: 170px;
+			left: -55px;
+			opacity: 0.6;
+			z-index: 1;
 		}
 	}
 	.pages {
@@ -274,6 +311,139 @@ header {
 			span {
 				color: #494949;
 			}
+		}
+	}
+}
+
+.s-download {
+	padding-top: 160px;
+	padding-bottom: 155px;
+	.download-text {
+		width: 40%;
+	}
+	.upper-title {
+		font-size: 22px;
+		font-weight: 500;
+	}
+	h2 {
+		font-size: 32px;
+	}
+	p {
+		color: #7C7C7C;
+	}
+	.sub-tittle {
+		font-size: 20px;
+		line-height: 1.4em;
+	}
+	.description {
+		font-size: 14px;
+	}
+	.img-container {
+		width: 40%;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.s-pricing {
+	padding-top: 60px;
+	padding-bottom: 115px;
+	background: url("../img/plans-bg.jpg") no-repeat;
+	h2,
+	.upper-title {
+		text-align: center;
+	}
+	h2 {
+		text-transform: uppercase;
+	}
+	.plans {
+		margin-top: 100px;
+		.plan {
+			width: 320px;
+			height: 600px;
+			background: url("../img/plan-bg.jpg") no-repeat;
+			background-size: cover;
+			border-radius: 20px;
+			h3 {
+				margin-top: 70px;
+				font-size: 18px;
+				font-weight: 700;
+			}
+			p {
+				position: relative;
+				margin: 0;
+				font-size: 72px;
+				font-weight: 800;
+				line-height: 1.0em;
+				color: #52D9F4;
+				.currency,
+				.date {
+					font-size: 20px;
+					font-weight: 500;
+				}
+				.currency {
+					position: relative;
+					top: -26px;
+				}
+			}
+			ul {
+				li {
+					margin-top: 15px;
+					text-align: center;
+					font-size: 16px;
+					font-weight: 500;
+					color: #7c7c7c;
+				}
+				li.hidden {
+					color: #bebebe;
+				}
+			}
+			.general-button {
+				width: 150px;
+				height: 50px;
+				margin-top: 20px;
+				border-radius: 27.21px;
+			}
+		}
+		.main-plan {
+			@extend .plan;
+			width: 350px;
+			height: 625px;
+			h3 {
+				font-size: 20px;
+			}
+			p {
+				font-size: 78px;
+			}
+			ul {
+				li {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+.s-subscribe {
+	padding-top: 70px;
+	padding-bottom: 150px;
+	form {
+		margin-top: 65px;
+		input,
+		.general-button {
+			width: 370px;
+			height: 75px;
+			border-radius: 37.5px;
+		}
+		input {
+			margin-bottom: 27px;
+			border: 1px solid #F7F7F7;
+		}
+		.general-button {
+			font-size: 16px;
+			font-weight: 600;
 		}
 	}
 }
