@@ -14,8 +14,8 @@
 	<header>
 		<nav>
 			<div class="container">
-				<div class="flex-row flex-between flex-middle">
-					<img src="img/logo.png" alt="logo" class="logo">
+				<div class="flex-row flex-between flex-around-xl flex-middle flex-wrap">
+					<img src="img/logo.png" alt="logo" class="flaby.com">
 					<ul class="flex-row">
 						<li>
 							<a href="">Home</a>
@@ -40,26 +40,30 @@
 			</div>
 		</nav>
 		<div class="container">
-			<div class="flex-col flex-center banner">
-				<h1>Flat + Free = Flaby</h1>
-				<p>A Modern Flat design corporate template for free download with all great features and trendy look.</p>
-				<div class="flex-row flex-between">
-					<button class="flex-row flex-centered google-store">
-					<img src="img/google-play.png" alt="google play">
-					<span>Google Store</span>
-					</button>
-					<button class="learn-more">Learn More</button>
+			<div class="flex-row flex-center-xl">
+				<div class="flex-col flex-center banner">
+					<h1>Flat + Free = Flaby</h1>
+					<p>A Modern Flat design corporate template for free download with all great features and trendy look.</p>
+					<div class="flex-row flex-col-sm flex-between flex-center-md">
+						<button class="flex-row flex-centered google-store">
+							<img src="img/google-play.png" alt="google play">
+							<span>Google Store</span>
+						</button>
+						<button class="learn-more">
+							<span>Learn More</span>
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 	<section class="s-services">
-		<div class="contaner">
+		<div class="container">
 			<div class="flex-col flex-middle">
 				<span class="upper-title">Welcome to</span>
 				<h2>Our Services</h2>
 				<div class="divider"></div>
-				<div class="flex-row flex-around items">
+				<div class="flex-row flex-around flex-wrap items">
 					<div class="flex-col flex-middle item">
 						<img src="img/webdev.png" alt="webdev">
 						<div class="item-text">
@@ -87,11 +91,11 @@
 		</div>
 	</section>
 	<section class="s-features">
-		<div class="flex-row flex-middle">
+		<div class="flex-row flex-col-lg flex-middle">
 			<div class="img-container">
 				<img src="img/tablet.png" alt="tablet">
 			</div>
-			<div class="flex-col">
+			<div class="flex-col flex-middle-lg features-text">
 				<span class="upper-title">We have great features with</span>
 				<h2>Unlimited Customization Features</h2>
 				<p>There are many variations of passages of Lorem Ipsum available, the majorityalteration make difficult</p>
@@ -120,8 +124,8 @@
 						</div>
 						<span>Full one page flat and modern trend following goods</span>
 					</li>
-					<button class="general-button">Read more</button>
 				</ul>
+				<button class="general-button">Read more</button>
 			</div>
 		</div>
 	</section>
@@ -184,7 +188,7 @@
 				<span class="upper-title">Get know About</span>
 				<h2>What customer say</h2>
 				<div class="divider"></div>
-				<div class="reviews">
+				<div class="flex-row flex-center reviews">
 					<div class="flex-col flex-middle review">
 						<div class="customer-avatar"><img src="img/author.png" alt="author"></div>
 						<div class="customer-name">Sourabh B.</div>
@@ -209,7 +213,7 @@
 	</section>
 	<section class="s-download">
 		<div class="container">
-			<div class="flex-row flex-around flex-middle">
+			<div class="flex-row flex-col-lg flex-around flex-center-sm flex-middle paddings ">
 				<div class="flex-col download-text">
 					<span class="upper-title">Feel free to download our</span>
 					<h2>Great Resourse for free</h2>
@@ -229,7 +233,7 @@
 				<span class="upper-title">Get Idea About</span>
 				<h2>Pricing plan</h2>
 				<div class="divider"></div>
-				<div class="flex-row flex-around flex-middle plans">
+				<div class="flex-row flex-around flex-middle flex-wrap plans">
 					<div class="flex-col flex-centered plan">
 						<img src="img/book.png" alt="book">
 						<h3>Student</h3>
@@ -277,13 +281,77 @@
 			<h2>Subscribe now</h2>
 			<div class="divider"></div>
 			<form class="flex-col flex-middle">
-				<input type="text">
-				<input type="text">
+				<input type="text" name="name" placeholder="Nicky Moa">
+				<input type="text" name="email" placeholder="Example@gmail.com">
 				<button type="submit" class="general-button">Subscribe</button>
 			</form>
 		</div>
 	</section>
 	<footer>
+		<div class="container">
+			<div class="flex-row flex-around flex-wrap">
+				<div class="flex-col flex-top site-info">
+					<img src="img/logo-footer.png" alt="flaby.com">
+					<p>Flaby is a free flat template and available for free downloads but please don’t use for sell</p>
+					<div class="flex-row socials">
+						<img src="img/facebook.png" alt="facebook">
+						<img src="img/google-plus.png" alt="google">
+						<img src="img/twitter.png" alt="twitter">
+					</div>
+				</div>
+				<div class="flex-row flex-around flex-wrap footer-links">
+					<div class="flex-col">
+						<h3>Useful Link</h3>
+						<ul>
+							<li><a href="">Resource</a></li>
+							<li><a href="">Downloads</a></li>
+							<li><a href="">Graphics</a></li>
+							<li><a href="">Templates</a></li>
+							<li><a href="">UI colors</a></li>
+						</ul>
+					</div>
+					<div class="flex-col">
+						<h3>Free Goods</h3>
+						<ul>
+							<li><a href="">Movies</a></li>
+							<li><a href="">Music</a></li>
+							<li><a href="">Videos</a></li>
+							<li><a href="">Games</a></li>
+							<li><a href="">Application</a></li>
+						</ul>
+					</div>
+					<div class="flex-col">
+						<h3>Useful Link</h3>
+						<ul>
+							<li><a href="">Resource</a></li>
+							<li><a href="">Downloads</a></li>
+							<li><a href="">Graphics</a></li>
+							<li><a href="">Templates</a></li>
+							<li><a href="">UI colors</a></li>
+						</ul>
+					</div>
+					<div class="flex-col">
+						<h3>Useful Link</h3>
+						<ul>
+							<li><a href="">Resource</a></li>
+							<li><a href="">Downloads</a></li>
+							<li><a href="">Graphics</a></li>
+							<li><a href="">Templates</a></li>
+							<li><a href="">UI colors</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="flex-row copyright">
+				<div><span class="copy-symbol">&copy;</span>Copyright 2017</div>
+				<div class="vertical-divider"></div>
+				<div>All rights reserved</div>
+				<div class="vertical-divider"></div>
+				<div>Template Designed By <span class="author">Sourabh Barua</span></div>
+			</div>
+		</div>
 	</footer>
 	<link rel="stylesheet" href="css/main.min.css">
 </body>

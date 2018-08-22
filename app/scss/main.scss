@@ -40,6 +40,7 @@ button {
 
 header {
 	background: url("../img/header-bg.jpg") no-repeat;
+	background-size: cover;
 	color: #fff;
 	nav {
 		padding-top: 50px;
@@ -57,6 +58,9 @@ header {
 					text-transform: uppercase;
 					text-decoration: none;
 					color: #fff;
+					&:hover {
+						text-decoration: underline;
+					}
 				}
 			}
 		}
@@ -134,6 +138,7 @@ header {
 	padding-top: 115px;
 	padding-bottom: 115px;
 	background: url("../img/bg.jpg") no-repeat;
+	background-size: cover;
 	.img-container {
 		max-width: 680px;
 		margin-right: 150px;
@@ -142,46 +147,49 @@ header {
 			height: auto;
 		}
 	}
-	.upper-title {
-		font-size: 22px;
-		font-weight: 500;
-	}
-	h2 {
-		font-size: 32px;
-	}
-	p {
-		font-size: 20px;
-		color: #7C7C7C;
-	}
-	ul {
-		li {
-			margin-bottom: 20px;
-			font-size: 14px;
+	.features-text {
+		max-width: 700px;
+		.upper-title {
+			font-size: 22px;
 			font-weight: 500;
+		}
+		h2 {
+			font-size: 32px;
+		}
+		p {
+			font-size: 20px;
 			color: #7C7C7C;
-			.marker {
-				margin-right: 20px;
-				.marker-outer {
-					position: relative;
-					width: 20px;
-					height: 20px;
-					background: #C8EBF5;
-					border-radius: 50%;
-					.marker-inner {
-						width: 10px;
-						height: 10px;
-						background: #66D4F4;
+		}
+		ul {
+			li {
+				margin-bottom: 20px;
+				font-size: 14px;
+				font-weight: 500;
+				color: #7C7C7C;
+				.marker {
+					margin-right: 20px;
+					.marker-outer {
+						position: relative;
+						width: 20px;
+						height: 20px;
+						background: #C8EBF5;
 						border-radius: 50%;
+						.marker-inner {
+							width: 10px;
+							height: 10px;
+							background: #66D4F4;
+							border-radius: 50%;
+						}
 					}
 				}
 			}
 		}
-	}
-	.general-button {
-		width: 150px;
-		height: 50px;
-		margin-top: 50px;
-		border-radius: 25px;
+		.general-button {
+			width: 150px;
+			height: 50px;
+			margin-top: 50px;
+			border-radius: 25px;
+		}
 	}
 }
 
@@ -218,6 +226,7 @@ header {
 	padding-top: 50px;
 	padding-bottom: 110px;
 	background: url(../img/bg-2.jpg) no-repeat;
+	background-size: cover;
 	h2 {
 		text-transform: uppercase;
 	}
@@ -351,6 +360,7 @@ header {
 	padding-top: 60px;
 	padding-bottom: 115px;
 	background: url("../img/plans-bg.jpg") no-repeat;
+	background-size: cover;
 	h2,
 	.upper-title {
 		text-align: center;
@@ -439,11 +449,89 @@ header {
 		}
 		input {
 			margin-bottom: 27px;
+			padding-left: 105px;
 			border: 1px solid #F7F7F7;
+			font-size: 14px;
+			font-weight: 600;
+			&:focus {
+				outline: none;
+			}
+		}
+		input[name="name"]::placeholder {
+			color: #7C7C7C;
+		}
+		input[name="email"] {
+			background: #F5FAFA;
+			&::placeholder {
+				color: #BBBFBF;
+			}
+		}
+		.input-name {
+			box-shadow: 0px 84px 55px -47px rgba(245, 249, 249, 1);
 		}
 		.general-button {
 			font-size: 16px;
 			font-weight: 600;
+			box-shadow: 0px 10px 75px 5px rgba(217, 244, 252, 0.75);
+		}
+	}
+}
+
+footer {
+	.container {
+		padding-top: 50px;
+		padding-bottom: 40px;
+		border-top: 1px solid #DFDFDF;
+	}
+	.site-info {
+		flex: 20% 2 8;
+		//width: 20%;
+		p {
+			font-weight: 500;
+			color: #7C7C7C;
+		}
+		.socials {
+			margin-top: 20px;
+			img {
+				margin-right: 10px;
+			}
+		}
+	}
+	.footer-links {
+		flex: 70% 8 2;
+		//width: 70%;
+		h3 {
+			font-size: 20px;
+			font-weight: 600;
+		}
+		ul {
+			margin-top: 30px;
+			li {
+				margin-bottom: 10px;
+				a {
+					font-size: 14px;
+					font-weight: 500;
+					color: #7C7C7C;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.copyright {
+		.copy-symbol {
+			margin-right: 3px;
+		}
+		div {
+			margin-right: 17px;
+			font-size: 14px;
+			font-weight: 500;
+			color: #7C7C7C;
+		}
+		.vertical-divider {
+			border-right: 1px solid #7C7C7C;
+		}
+		.author {
+			font-weight: 800;
 		}
 	}
 }

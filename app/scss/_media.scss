@@ -1,9 +1,85 @@
-@media only screen and (max-width: $xl) {}
+@media only screen and (max-width: $xl) {
+	.banner {
+		text-align: center;
+	}
+}
 
-@media only screen and (max-width: $lg) {}
+@media only screen and (max-width: $lg) {
+	.container {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.s-features {
+		.features-text {
+			text-align: center;
+		}
+		.img-container {
+			display: none;
+		}
+	}
+	.s-pricing {
+		background: #F3FBFD;
+		.plans {
+			.plan {
+				margin-top: 35px;
+				order: 2;
+			}
+			.main-plan {
+				order: 1;
+			}
+		}
+	}
+	.s-download {
+		.download-text {
+			width: 100%;
+			order: 1;
+		}
+		.img-container {
+			width: 90%;
+			margin-top: 50px;
+			order: 2;
+		}
+		.download-text {
+			align-items: center;
+		}
+	}
+	.s-reviews {
+		.reviews {
+			.review {
+				width: 90%;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			.review-disable-one,
+			.review-disable-two {
+				display: none;
+			}
+		}
+	}
+}
 
-@media only screen and (max-width: $md) {}
+@media only screen and (max-width: $md) {
+	.container {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.s-reviews {
+		.reviews {
+			.review {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
 
-@media only screen and (max-width: $sm) {}
+@media only screen and (max-width: $sm) {
+	.s-download {
+		.download-text,
+		.img-container {
+			width: 100%;
+		}
+	}
+}
 
 @media only screen and (max-width: $xs) {}
