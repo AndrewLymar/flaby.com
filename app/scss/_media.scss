@@ -5,10 +5,6 @@
 }
 
 @media only screen and (max-width: $lg) {
-	.container {
-		padding-left: 50px;
-		padding-right: 50px;
-	}
 	.s-features {
 		.features-text {
 			text-align: center;
@@ -33,14 +29,12 @@
 		.download-text {
 			width: 100%;
 			order: 1;
+			text-align: center;
 		}
 		.img-container {
 			width: 90%;
 			margin-top: 50px;
 			order: 2;
-		}
-		.download-text {
-			align-items: center;
 		}
 	}
 	.s-reviews {
@@ -59,9 +53,47 @@
 }
 
 @media only screen and (max-width: $md) {
-	.container {
-		padding-left: 5px;
-		padding-right: 5px;
+	header {
+		nav {
+			position: fixed;
+			width: 100%;
+			background: #51AFF7;
+			border-bottom: none;
+			z-index: 1000;
+			.container {
+				.menu-icon {
+					position: relative;
+					display: flex;
+				}
+				ul {
+					position: absolute;
+					display: none;
+					width: 100%;
+					flex-direction: column;
+					align-items: center;
+					top: 148px;
+					padding-top: 25px;
+					padding-bottom: 25px;
+					background: #51AFF7;
+					li {
+						margin: 0;
+						margin-bottom: 25px;
+						&:last-child {
+							margin: 0;
+						}
+						a {
+							font-size: 28px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.banner {
+		margin-top: 100px;
+		button {
+			margin-bottom: 25px;
+		}
 	}
 	.s-reviews {
 		.reviews {
@@ -71,13 +103,60 @@
 			}
 		}
 	}
+	footer {
+		.footer-links {
+			margin-top: 50px;
+		}
+	}
 }
 
 @media only screen and (max-width: $sm) {
+	.paddings-mobile {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	.banner {
+		margin-top: 150px;
+		button {
+			margin-bottom: 25px;
+		}
+	}
 	.s-download {
 		.download-text,
 		.img-container {
 			width: 100%;
+		}
+	}
+	.s-subscribe {
+		form {
+			width: 100%;
+			input,
+			.general-button {
+				width: 80%;
+				padding: 0;
+				text-align: center;
+			}
+		}
+	}
+	footer {
+		.site-info {
+			p {
+				text-align: center;
+			}
+		}
+		.footer-links {
+			margin-top: 50px;
+			flex-wrap: wrap;
+			ul {
+				li {
+					text-align: center;
+				}
+			}
+		}
+		.copyright {
+			div {
+				margin-bottom: 10px;
+			}
 		}
 	}
 }

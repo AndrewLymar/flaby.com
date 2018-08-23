@@ -46,6 +46,11 @@ header {
 		padding-top: 50px;
 		padding-bottom: 50px;
 		border-bottom: 1px solid #BFE1FC;
+		.menu-icon {
+			display: none;
+			width: 64px;
+			height: 64px;
+		}
 		ul {
 			li {
 				margin-right: 38px;
@@ -157,6 +162,8 @@ header {
 			font-size: 32px;
 		}
 		p {
+			flex: 1 0 0;
+			max-width: 100%;
 			font-size: 20px;
 			color: #7C7C7C;
 		}
