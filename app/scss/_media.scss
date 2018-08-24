@@ -57,6 +57,8 @@
 		nav {
 			position: fixed;
 			width: 100%;
+			padding-top: 25px;
+			padding-bottom: 25px;
 			background: #51AFF7;
 			border-bottom: none;
 			z-index: 1000;
@@ -66,13 +68,14 @@
 					display: flex;
 				}
 				ul {
-					position: absolute;
+					position: relative;
 					display: none;
 					width: 100%;
 					flex-direction: column;
 					align-items: center;
-					top: 148px;
-					padding-top: 25px;
+					margin: 0;
+					top: 0px;
+					padding-top: 40px;
 					padding-bottom: 25px;
 					background: #51AFF7;
 					li {

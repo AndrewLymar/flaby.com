@@ -70,6 +70,15 @@ header {
 			}
 		}
 	}
+	nav.fixed-menu {
+		position: fixed;
+		width: 100%;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		background: #51AFF7;
+		border-bottom: none;
+		z-index: 1000;
+	}
 	.banner {
 		width: 530px;
 		height: 800px;
@@ -196,6 +205,7 @@ header {
 			height: 50px;
 			margin-top: 50px;
 			border-radius: 25px;
+			box-shadow: 0px 10px 75px 5px rgba(217, 244, 252, 0.75);
 		}
 	}
 }
@@ -462,19 +472,20 @@ header {
 			font-weight: 600;
 			&:focus {
 				outline: none;
+				border: 1px solid #66D4F4;
 			}
 		}
-		input[name="name"]::placeholder {
-			color: #7C7C7C;
+		input[name="name"] {
+			box-shadow: 3px 27px 64px 17px rgba(245, 249, 249, 1);
+			&::placeholder {
+				color: #7C7C7C;
+			}
 		}
 		input[name="email"] {
 			background: #F5FAFA;
 			&::placeholder {
 				color: #BBBFBF;
 			}
-		}
-		.input-name {
-			box-shadow: 0px 84px 55px -47px rgba(245, 249, 249, 1);
 		}
 		.general-button {
 			font-size: 16px;
@@ -520,6 +531,9 @@ footer {
 					font-weight: 500;
 					color: #7C7C7C;
 					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
 				}
 			}
 		}
