@@ -78,7 +78,6 @@ function mobileMenu(menuClassName, menuIconClassName, closeIconClassName, mobile
 		var target = this.hash;
 		var $target = $(target);
 		event.preventDefault();
-		console.log(offset);
 		$menuLinks.each(function () {
 			$(this).removeClass("active");
 		})
