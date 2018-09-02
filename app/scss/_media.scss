@@ -98,6 +98,16 @@
 			margin-bottom: 25px;
 		}
 	}
+	.s-services {
+		.items {
+			.item {
+				margin-bottom: 50px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
 	.s-reviews {
 		.reviews {
 			.review {

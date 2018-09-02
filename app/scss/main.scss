@@ -131,6 +131,7 @@ header {
 				margin-bottom: 25px;
 			}
 			.item-text {
+				max-width: 100%;
 				margin-top: auto;
 				text-align: center;
 				h3 {
@@ -139,6 +140,7 @@ header {
 					color: #494949;
 				}
 				p {
+					max-width: 100%;
 					font-size: 14px;
 					font-weight: 500;
 					color: #7C7C7C;
@@ -162,6 +164,7 @@ header {
 		}
 	}
 	.features-text {
+		flex-wrap: wrap;
 		max-width: 700px;
 		.upper-title {
 			font-size: 22px;
@@ -171,7 +174,6 @@ header {
 			font-size: 32px;
 		}
 		p {
-			flex: 1 0 0;
 			max-width: 100%;
 			font-size: 20px;
 			color: #7C7C7C;
@@ -218,6 +220,7 @@ header {
 	.container {
 		max-width: 1070px;
 		.items {
+			max-width: 100%;
 			margin-top: 110px;
 			.item {
 				width: 300px;
@@ -274,6 +277,7 @@ header {
 			}
 			span,
 			p {
+				max-width: 100%;
 				font-weight: 500;
 				color: #7c7c7c;
 			}
@@ -504,6 +508,7 @@ footer {
 	.site-info {
 		flex: 20% 1 2;
 		p {
+			max-width: 100%;
 			font-weight: 500;
 			color: #7C7C7C;
 		}
